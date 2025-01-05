@@ -44,13 +44,22 @@ func create_part(parent_node, partid, points):
 	var polygon = Polygon2D.new()
 	polygon.polygon = unique_points
 	polygon.name = str(partid)
+	polygon.modulate = Color(0,0,0,0)
 	
 	var collision_polygon = CollisionPolygon2D.new()
 	collision_polygon.polygon = unique_points
 	collision_polygon.name = str(partid)
 	
+	var line = Line2D.new()
+	line.points = unique_points
+	line.name = str(partid)
+	line.modulate = Color(0,0,0,0.5)
+	line.width = 0.5
+	line.closed = true
+	
 	parent_node.add_child(polygon)
 	parent_node.add_child(collision_polygon)
+	parent_node.add_child(line)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
