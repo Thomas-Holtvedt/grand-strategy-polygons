@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://de3bo5ne6ch8r"]
+[gd_scene load_steps=4 format=3 uid="uid://de3bo5ne6ch8r"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_2rrpw"]
+[ext_resource type="Script" path="res://camera_2d.gd" id="2_1qcfq"]
 [ext_resource type="Texture2D" uid="uid://bi73j6ycwd6j7" path="res://world.200408.3x5400x2700.jpg" id="2_f5waj"]
 
 [node name="Node2D" type="Node2D"]
@@ -8,6 +9,7 @@ script = ExtResource("1_2rrpw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+script = ExtResource("2_1qcfq")
 
 [node name="World_200408_3x5400x2700" type="Sprite2D" parent="."]
 scale = Vector2(0.067, 0.067)
