@@ -1,2 +1,3 @@
-# GrandStrategy2D_RealData
- Simple grand strategy map made with real world data
+# Grand strategy map 
+
+ A 2D grand strategy map crafted using authentic real-world geographical data extracted and processed from QGIS.
